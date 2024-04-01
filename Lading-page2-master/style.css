@@ -15,20 +15,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-image: url("./assets/header-1.png");
+    background-size: cover;
+    background-position: center;
+    padding: 0px 20px;
 }
-.background{
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-}
+
 .header-logo{ /*Div que segura o logo da pagina na section e o h1*/
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: center;
     align-items: center;
-    top: 116px;
     text-align: center;
 }
 
@@ -47,42 +45,46 @@ h1{
 }
 
 .artigo-section-1{
-    width: 538px;
+    width: 100%;
+    max-width: 520px;
     height: 208px;
 }
 .artigo-section-1 h2{
+    width: 100%;
     color: #ffff;
     font-size: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 311px;
-    left: 41%;
+    position: relative;
+    padding-bottom: 40px;
+    margin-top: 59px;
+
+
+
 
 }
 .artigo-section-1 p{
     color: #ffff;
-    width: 520px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     text-align: center;
-    top: 392px;
-    left: 36%;
+
 
 
 }
 .container-icons{
-    width: 566px;
+    width: 100%;
+    max-width: 566px;
     height: 136px;
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
+    position: relative;
     display: flex;
     flex-wrap: nowrap; /*itens alinhados */
+    margin-top: 87px;
+
 }
 .group-1 img{
     width: 110px;
@@ -124,8 +126,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 85%;
+    margin-top: 70px;
 }
 .button{
     width: 192px;
@@ -147,15 +148,19 @@ h1{
     position: relative;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
 }
+
 .container-back{
-    width: 912px;
+    width: calc(50% + 20px);
     height: 763px;
     background-color: #50B2EA;
-    margin: 0 0 0  auto;
+    margin: 0 -20px 0  auto;
 }
 .container-infos{
-    width: 1199px;
+    width: 100%;
+    max-width:1200px;
     height: 509px;
     position: absolute;
     background-color: #50B2EA;
@@ -163,12 +168,13 @@ h1{
     display:flex ;
 }
 .container-infos img{
-    width: 559px;
+    width: 50%;
     height: 509px;
     margin: 0 0 0 auto;
+    object-fit: cover
 }
 .text-infos{
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -203,14 +209,16 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 85%;
+    position: relative;
+    margin-top: -62px;
+    padding-bottom: 35px;
+    
     
 }
 .section2-button .button2{
     width: 192px;
     height: 62px;
-    position: absolute;
+    position: relative;
     background-color: #50B2EA;
     border: 2px solid  #ffff;
     font-size: 18px;
@@ -220,11 +228,12 @@ h1{
     
 }
 .section-services{ 
-    width: 1903px;
+    width: 100%;
     height: 674px;
     display: flex;
     justify-content: center;
-  
+    background-image: url("/Lading-page2-master/assets/Group\ 28.png");
+    padding:  0px 20px;
 } 
 .section-services h3{
     font-size: 50px;
@@ -234,65 +243,28 @@ h1{
     text-align:center;
     margin-top: 45px;
 }
-.back img{
-    width: 100%;
-    height: 674px;
-}
+
 .container-services{
     width: 966px;
     height: 180px;
-    position: absolute;
     display: flex;
     flex-wrap: nowrap; /*itens alinhados */
     justify-content: center;
     margin-top: 150px;
     gap: 50px;
 }
-.group-4 img{
+.group img{
     width: 180px;
     height: 180px;
     display:flex ;
     gap: 50px;
 }
-.group-4 p {
+.group p {
     margin-top: 10px;
     color: #19435A;
     font-weight: bold;
- }
-.group-5 img{
-    width: 180px;
-    height: 180px;
-    display:flex ;
-    gap: 50px;
 }
-.group-5 p {
-    margin-top: 10px;
-    color: #19435A;
-    font-weight: bold;
- }
-.group-6 img{
-    width: 180px;
-    height: 180px;
-    display:flex ;
-    gap: 50px;
-}
-.group-6 p {
-    margin-top: 10px;
-    color: #19435A;
-    font-weight: bold;
- }
-.group-7 img{
-    width: 180px;
-    height: 180px;
-    display:flex ;
-    gap: 50px;
-}
-.group-7 p {
-    margin-top: 10px;
-    color: #19435A;
-    font-weight: bold;
- }
- .service-button{
+.service-button{
     width: 192px;
     height: 62px;
     margin-top: 553px;
@@ -314,125 +286,104 @@ h1{
     border-radius: 10px;
  }
  .section-testy{
+    width: 100%;
+    height: 718px;
+    background-color: #50B2EA;
+    padding:  0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: flex;
     justify-content: center;
     align-items:center ;
+    flex-direction: column;
+    gap: 20px;
 
- }
- .cont-back{
-    width: 1903px;
-    height: 718px;
-    background-color: #50B2EA;
-    display: flex;
-    justify-content: center;
-    align-items: center
-    
  }
  .section-testy .titulo{
     color: #ffffff;
     font-size: 50px;
-    position: absolute;
-    top: 235%;
-    left: 42%;
+    
+   
     font-weight: bold;
 }
-.section-testy .container-comment1{
-    width: 577px;
+.container-comentarios{
+    width: 100%;
+    max-width:1200px ;
+    display: flex;
+    gap: 46px;
+}
+.container-comentarios .comments{
+    width: 100%;
     height: 233px;
+    background-color: #ffff;
     border-radius: 40px;
-    background-color: rgb(253, 253, 253);
-    position: absolute;
-    left: 20%;
-    top:250%
     
 }
-.section-testy .container-comment2{
-    width: 577px;
-    height: 233px;
-    border-radius: 40px;
-    background-color: rgb(253, 253, 253);
-    position: absolute;
-    left: 52%;
-    top:250%
-}
-.section-testy .container-comment3{
-    width: 577px;
-    height: 233px;
-    border-radius: 40px;
-    background-color: rgb(253, 253, 253);
-    position: absolute;
-    left: 20%;
-    top: 275%;
-}
-.section-testy .container-comment4{
-    width: 577px;
-    height: 233px;
-    border-radius: 40px;
-    background-color: rgb(253, 253, 253);
-    position: absolute;
-    left: 52%;
-    top: 275%;
-}
+
+
 .contact-us{
-    width: 1903px;
+    width: 100%;
     height: 520px;
     background-color: #ffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding:  0px 20px;
 }
 .contact-us .contato{
     font-size: 50px;
     color: #50B2EA;
     font-weight: bold;
-    position: absolute;
-    left: 43%;
-    top: 305%
+    padding-bottom: 40px;
+  
+    
 }
 .input-name{
     width: 370px;
     height: 64px;
-    position: absolute;
+    
     border: none;
     text-align: center;
     border-radius:40px;
     background-color: #50B2EA;
     align-items: center;
-    top: 322%
+    
 }
 .input-number{
     width: 370px;
     height: 64px;
-    position: absolute;
+    
     border: none;
     text-align: center;
     border-radius:40px;
     background-color: #50B2EA;
     align-items: center;
-    top: 330%
+  
 }
 .input-email{
     width: 370px;
     height: 64px;
-    position: absolute;
+    
     border: none;
     text-align: center;
     border-radius:40px;
     background-color: #50B2EA;
     align-items: center;
-    top: 338%
+    
 }
 .enviar{
     width: 148px;
     height: 64px;
-    position: absolute;
     border:none;
     border-radius: 40px;
     background-color: #50B2EA;
-    top: 345%
+ 
 }
 .rodape{
-    width: 1903px;
+    width: 100%;
     height: 80px;
     background-color: #19435A;
 }
